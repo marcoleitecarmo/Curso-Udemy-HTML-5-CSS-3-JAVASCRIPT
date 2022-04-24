@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Compostos</title>
+    <style>
+        div {
+            border: 3px solid red;
+            padding: 25px;
+            position: relative;
+        }
+        
+        div::before {
+            content: "texto before: ";
+            background: #ccc;
+        }
+        
+        div::after {
+            /*content: " :after:";*/
+            content: "";
+            background: red;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>Texto principal da div</div>
+
+    <article>
+        <h3>
+            Titulo
+        </h3>
+
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+
+
+    </article>
+
+    <ul>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="http://serfrontend.com" target="_blank" rel="noopener noreferrer">link externo</a></li>
+        <li><a href="http://serfrontend.com/qq.pdf" target="_blank" rel="noopener noreferrer">link externo</a></li>
+        <li><a href="24_transition.html" title="Veja exercicio anterior">link interno</a></li>
+    </ul>
+
+
+</body>
+
+</html>
