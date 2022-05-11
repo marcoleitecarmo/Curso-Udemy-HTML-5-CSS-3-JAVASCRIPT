@@ -39,8 +39,12 @@
             background: red;
         }
         
+        label input:focus+span {
+            box-shadow: 0 0 0 2px red;
+        }
+        
         input {
-            visibility: hidden;
+            opacity: 0;
             width: 1px;
             height: 1px;
             overflow: hidden;
