@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            margin-right: 25px;
+            display: block;
+        }
+        
+        .chk {
+            display: inline-block;
+            background: #ddd;
+            width: 4.5em;
+            height: 2rem;
+            border-radius: 15px;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .chk::before {
+            content: '';
+            display: inline-block;
+            background: white;
+            border: 2px solid #bbb;
+            border-radius: 1em;
+            width: 1.6em;
+            height: 1.6rem;
+            margin-top: .2em;
+            margin-left: .2em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            transition: all .3s ease;
+        }
+        
+        input[type="checkbox"]:checked+.chk::before {
+            content: '';
+            background: #333aa3;
+            border: 2px solid #eee;
+            position: absolute;
+            top: 0;
+            left: 2.5em;
+        }
+        
+        input[type="checkbox"] {
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            visibility: hidden;
+            display: inline-block;
+            margin: 0;
+        }
+        
+        input[type="checkbox"]:checked+.chk {
+            background: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label>
+                <input type="checkbox">
+                <span class="chk"></span>
+                Cinema
+            </label>
+
+        <label>
+                <input type="checkbox">
+                <span class="chk"></span>
+                Noticias
+            </label>
+
+        <label>
+                <input type="checkbox">
+                <span class="chk"></span>
+                Educação
+            </label>
+    </div>
+</body>
+
+</html>
