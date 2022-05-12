@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 32</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        a {
+            display: block;
+            margin: 10px;
+            position: relative;
+        }
+        
+        a img {
+            width: 100%;
+            display: block;
+        }
+        
+        a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            transition: all .5s;
+        }
+        
+        a:hover::before {
+            background: rgba(0, 0, 0, .5);
+        }
+        
+        a::after {
+            opacity: 0;
+        }
+        
+        a:hover:after {
+            content: 'Veja mais';
+            display: block;
+            position: absolute;
+            border: 3px solid white;
+            color: white;
+            top: 50%;
+            left: 50%;
+            padding: 10px 20px;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Estrutura Basica</h1>
+    <section>
+        <article>
+            <a href="#">
+                <img src="thumbs/01.jpg" alt="">
+            </a>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="thumbs/02.jpg" alt="">
+            </a>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="thumbs/03.jpg" alt="">
+            </a>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="thumbs/04.jpg" alt="">
+            </a>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="thumbs/05.jpg" alt="">
+            </a>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="thumbs/06.jpg" alt="">
+            </a>
+        </article>
+
+
+
+
+    </section>
+
+
+</body>
+
+</html>
