@@ -20,7 +20,7 @@ body {
 
 .hero-content h1 {
     text-transform: uppercase;
-    font-size: 46px;
+    font-size: px;
     text-shadow: 3px 3px 2px #333;
 }
 
@@ -101,6 +101,7 @@ main {
 
 .content-header h2 {
     margin: 0;
+    text-align: center;
 }
 
 .rodape {
