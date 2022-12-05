@@ -316,6 +316,12 @@ textarea {
     border-radius: 5px;
 }
 
+.img-right {
+    padding-left: 600px;
+    
+    
+}
+
 .main-footer {
     position: fixed;
     bottom: 0;
