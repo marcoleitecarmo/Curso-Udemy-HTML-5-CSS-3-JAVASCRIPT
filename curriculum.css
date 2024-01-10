@@ -1,0 +1,43 @@
+body {
+    width: 80%;
+    margin: auto;
+    font-family: Verdana, Helvetica, sans-serif;
+    color: #444;
+    }
+
+h1 {
+    background-color: #fac877;
+    font-size: 40px;
+    text-align: center;
+    color: #9f461f;
+    }
+
+h2 {
+    color: red;
+    background-color: #c79090;
+    font-size: 30px;
+    border-bottom: solid 3px red;
+    padding: 10px;
+    }
+
+ul {
+    padding-left: 0;
+    }
+
+li {
+    padding-left: 0;
+    list-style-position: inside;
+    }
+
+.destaque {
+        font-style:initial;
+        font-size: larger;
+        }
+
+a {
+    text-decoration: none;
+    }
+
+a:hover {
+        text-decoration: underline;
+        }
