@@ -10,6 +10,18 @@ h1 {
     font-size: 40px;
     text-align: center;
     color: #9f461f;
+    margin-bottom: 0;
+    }
+
+.center{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    }
+
+.subtitle {
+    margin-top: 0;
+    background-color: #c6c8e8;
     }
 
 h2 {
@@ -41,3 +53,25 @@ a {
 a:hover {
         text-decoration: underline;
         }
+
+.menu {
+    text-align: center;
+    }
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    }
+
+.menu a {
+    background-color: #c1bebe;
+    padding: 16px;
+    display: block;
+    }
+
+.menu a:hover {
+    background-color: #c72473;
+    color: #fff;
+    text-decoration: none;
+    }
